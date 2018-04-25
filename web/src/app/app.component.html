@@ -1,0 +1,29 @@
+<nav-bar></nav-bar>
+
+<div>
+    <mat-sidenav-container FullHeight>
+        <mat-sidenav [mode]="'over'" [(opened)]="UI.ShowSideNav" fixedTopGap="56">
+            <mat-nav-list>
+                <h3 mat-subheader>Folders</h3>
+                <mat-list-item *ngFor="let f of Folders">
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>{{f.name}}</h4>
+                    <p mat-line> {{f.description}} | {{f.date | date}} </p>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <h3 mat-subheader>Notes</h3>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>note</mat-icon>
+                    <h4 mat-line>Note 1</h4>
+                    <p mat-line> Description | Meta-data field </p>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <router-outlet class="d-flex"></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+
+
