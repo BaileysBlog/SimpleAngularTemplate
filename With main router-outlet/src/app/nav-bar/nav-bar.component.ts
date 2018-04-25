@@ -31,7 +31,9 @@ export class NavBarComponent implements OnInit, AfterViewInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit() 
+  {
+
   }
 
   ngAfterViewInit()

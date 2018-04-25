@@ -4,7 +4,8 @@ import { UIService } from '../../_Services/ui.service';
 @Directive({
   selector: '[FullHeight]',
   host: {
-    "(window:resize)": 'setHeight()'
+    "(window:resize)": 'setHeight()',
+    "(window:redraw)": 'setHeight()'
   }
 })
 export class FullHeightDirective {
@@ -19,7 +20,6 @@ export class FullHeightDirective {
 
   setHeight()
   {
-    
     this.UI.CalculateFullHeight();
     this.height = this.UI.FullHeight;
   }

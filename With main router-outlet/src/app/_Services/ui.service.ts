@@ -22,6 +22,7 @@ export class UIService
             if (event instanceof NavigationEnd)
             { 
                 this.ShowSideNav = false;
+                window.dispatchEvent(new Event("resize"));
             }    
         });
     }
@@ -50,6 +51,7 @@ export class UIService
     { 
         //console.log(`Body Height: ${this.BodyHeight} Nav Height: ${this.GetNavBarHeight()}`);
         this.FullHeight = this.BodyHeight - this.GetNavBarHeight();
+        
     }
 
     public SetBodyHeight(value: number): void

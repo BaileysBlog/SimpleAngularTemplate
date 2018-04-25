@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent, HomeComponent, FullHeightDirective],
-  imports: [NgbModule, ReactiveFormsModule, MaterialModule, CommonModule]
+  imports: [NgbModule, ReactiveFormsModule, MaterialModule, CommonModule],
+  exports:[FullHeightDirective]
 })
 export class ComponentsModule { }
