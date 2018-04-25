@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   private ResetForm(): void
   {
+    this.LoginForm.enable();
     this.LoginForm.reset();
   }
 
