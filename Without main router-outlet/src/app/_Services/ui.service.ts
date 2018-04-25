@@ -22,6 +22,7 @@ export class UIService
             if (event instanceof NavigationEnd)
             { 
                 this.ShowSideNav = false;
+                window.dispatchEvent(new Event("resize"));
             }    
         });
     }
