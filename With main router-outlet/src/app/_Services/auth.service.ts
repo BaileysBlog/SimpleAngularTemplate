@@ -12,6 +12,14 @@ export class AuthService {
     return this._IsAuthenticated;
   }
 
+  public Logout(): void
+  { 
+    if (this.IsAuthenticated())
+    { 
+      this._IsAuthenticated = false;
+    }  
+  }
+
   public Login(username: string, password: string): void
   { 
     this._IsAuthenticated = true;

@@ -16,7 +16,7 @@
       <mat-icon>help_outline</mat-icon>
       <span>Help</span>
     </button>
-    <button mat-menu-item *ngIf="auth.IsAuthenticated()">
+    <button mat-menu-item *ngIf="auth.IsAuthenticated()" (click)="auth.Logout()">
       <mat-icon>lock_outline</mat-icon>
       <span>Logout</span>
     </button>
