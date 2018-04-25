@@ -1,0 +1,17 @@
+.mat-drawer-container
+{
+    background-color: inherit !important;
+}
+
+mat-sidenav
+{
+    width: 50%;
+    transition: width 2s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    mat-sidenav
+    {
+        width: 90%;
+    }
+}
