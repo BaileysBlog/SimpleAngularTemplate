@@ -22,6 +22,6 @@ Want to see this site running on your device?
 *Note that service workers will only function in some browsers and require ssl connection for usage in production environments.
 
 ## Template
-This template follows the main structure as well the router-outlet is rendered inside the side-nav content area. This allows the side-nav to be displayed on all pages. Routes have the ability to display the side-nav but still the side-nav is present on all pages. This template is a general starting point and offers a good template for a wide variety of websites. 
+This template can be used as a simple application starting point that offers a menu toolbar with basic features (Help, Login, Logout), a side-nav with a collection of actions, routing, and basic services that can be later expanded.
 
 [1]: https://www.bayislife.com
