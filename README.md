@@ -1,5 +1,6 @@
-# Simple Angular Templates
-A really basic Angular template using Angular 5, Material 5, Bootstrap 4.
+# Live Demo
+Want to see this site running on your device?
+[Live Preview][1]
 
 # Features / Technology
 - Angular 5
@@ -22,3 +23,5 @@ A really basic Angular template using Angular 5, Material 5, Bootstrap 4.
 
 ## Template
 This template follows the main structure as well the router-outlet is rendered inside the side-nav content area. This allows the side-nav to be displayed on all pages. Routes have the ability to display the side-nav but still the side-nav is present on all pages. This template is a general starting point and offers a good template for a wide variety of websites. 
+
+[1]: https://www.bayislife.com
